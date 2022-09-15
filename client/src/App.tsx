@@ -1,10 +1,12 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function App() {
   const [products,setProducts] = useState([
     {name: 'product1',price:100},
     {name: 'product2',price:200},
   ]);
+
+ 
 
   function addProduct(){
     setProducts(prevState => [...prevState,
